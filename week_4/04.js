@@ -3,6 +3,7 @@
 Array.prototype.map123 = (callback, thisArg) => {
   //   map함수에서 return할 결과 배열
   let mappedArr = [];
+
   for (let i = 0; i < this.length; i++) {
     let mappedValue = callback.call(thisArg || global, this[i]);
     mappedArr[i] = mappedValue;
