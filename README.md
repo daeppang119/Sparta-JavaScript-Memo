@@ -1,1 +1,1 @@
-JavaScript 공부 정리
+## JavaScript 공부 정리
