@@ -1,7 +1,7 @@
 // 데이터 타입
 // runtime : run 하는 time
 // 코드를 작성할 때가 아니라, 실제 코드가 실행될 때
-// -> 옆에 터미널에 코드가 실행될 때
+// -> 터미널에 코드가 실행될 때
 // 그 때, 데이터 타입이 결정된다.
 // java : String a = "abd";
 // const a = "abc";
@@ -24,10 +24,14 @@ console.log(typeof num3); // number
 
 // 1-4.
 let num4 = "Hello" / 2;
-console.log(num4); // NaN(Not a Number)
+console.log(num4); // NaN(Not a Number): 숫자가 아닐때 나타나는 현상
 
 // 1-5. Infinity(무한대)
 let num5 = 1 / 0;
 console.log(num5); // Infinity
 console.log(typeof num5); // number
 
+// 1-6. Infinity(무한대)
+let num6 = -1 / 0;
+console.log(num6); // -Infinity
+console.log(typeof num5); // number

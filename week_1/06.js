@@ -71,11 +71,13 @@ console.log(5 <= 4); // false
 // 4-1. 논리곱 연산자: 모두가 ture일 때 ture 반환
 console.log(true && true); // true
 console.log(true && false); // false
+console.log(false && true); // false
 console.log(false && false); // false
 
 // 4-2. 논리합 연산자: 두 값 중 하나라도 true인 경우 true 반환
 console.log(true || true); // true
 console.log(true || false); // true
+console.log(false || true); // true
 console.log(false || false); // false
 
 // 4-3. 논리부정 연산자: 값을 반대로 바꿈
@@ -85,12 +87,12 @@ console.log(!c); // false
 
 // 5. 삼항 연산자(중요!!): 조건에 따라 값을 선택한다.
 let y = 10;
-let result = y > 5 ? "크다" : "작다" // 조건 ? "true이면 앞에 결정" : "false이면 뒤에 결정"
+let result = y > 5 ? "크다" : "작다"; // 조건 ? "true이면 앞에 결정" : "false이면 뒤에 결정"
 console.log(result); // 크다
 
 let z = 20;
 // 3항연산자를 이용해서 z가 10보다 작은 경우 작다를 console.log로 출력(10보다 크다면 크다를 출력)
-let answer = z < 10 ? "작다" : "크다"
+let answer = z < 10 ? "작다" : "크다";
 console.log(answer); // 크다
 
 // 6. 타입연산자(typeof)

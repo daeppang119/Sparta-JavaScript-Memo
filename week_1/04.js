@@ -19,11 +19,12 @@ console.log(y); // null
 
 // object(객체): key-value pair
 let person = {
-    name: 'yuna',
-    age: 26,
-    test: true
-}
+  name: "dae_ppang",
+  age: 26,
+  test: true,
+};
 console.log(typeof person); // object
 
 // array(배열): 여러 개의 데이터를 순서대로 저장하는 데이터 타입!!!
-let number = [1,2,3,4,5];
+let number = [1, 2, 3, 4, 5];
+let fruits = ["apple", "banana", "orange"];
