@@ -6,18 +6,18 @@
 // 값 추가, 검색, 값 삭제, 모든 값 제거, 존재 여부 확인
 
 const mySet = new Set();
-mySet.add('value1');
-mySet.add('value2');
-mySet.add('value3');
-mySet.add('value5');
-mySet.add('value8');
+mySet.add("value1");
+mySet.add("value2");
+mySet.add("value3");
+mySet.add("value5");
+mySet.add("value8");
 
-console.log(mySet.size);
-console.log(mySet.has("value1"));
-console.log(mySet.has("value2"));
-console.log(mySet.has("value4"));
+console.log(mySet.size); // 5
+console.log(mySet.has("value1")); // true
+console.log(mySet.has("value2")); // true
+console.log(mySet.has("value4")); // false
 
 // Iterator, 반복했던 그 친구.
-for(const value of mySet.values()){
-    console.log(value);
+for (const value of mySet.values()) {
+  console.log(value);
 }

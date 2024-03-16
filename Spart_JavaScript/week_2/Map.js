@@ -13,9 +13,33 @@
 //      > 검색, 삭제, 제거, 여부 확인
 
 const myMap = new Map();
-myMap.set('key', 'value');
+myMap.set("key", "value");
 
 // ...
 // ...
 
-myMap.get('key')
+myMap.get("key");
+// 반복 ... !! -> method : keys, values, entries
+
+const newMap = new Map();
+newMap.set("one", 1);
+newMap.set("two", 2);
+newMap.set("three", 3);
+
+// console.log(newMap.keys());
+for (const key of newMap.keys()) {
+  console.log(key);
+}
+
+// console.log(newMap.values());
+for (const value of newMap.values()) {
+  console.log(value);
+}
+
+// console.log(newMap.entries());
+for (const entry of newMap.entries()) {
+  console.log(entry);
+}
+
+console.log(newMap.size); // map의 사이즈(길이)
+console.log(newMap.has("two")); // key 기반 검색
